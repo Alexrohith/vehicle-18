@@ -33,3 +33,6 @@ python-multipart
 # Testing
 pytest
 httpx
+ultralytics
+huggingface_hub
+reportlab
