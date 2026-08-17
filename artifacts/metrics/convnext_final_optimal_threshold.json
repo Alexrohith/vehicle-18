@@ -1,0 +1,203 @@
+{
+    "model": "ConvNeXt-Tiny",
+    "checkpoint": "models\\convnext_final_development_best.pth",
+    "checkpoint_epoch": 13,
+    "dataset": "data/final_splits",
+    "validation_samples": 987,
+    "test_samples": 1000,
+    "test_used": false,
+    "threshold_selection_split": "validation",
+    "selected_metric": "F1",
+    "optimal_threshold": 0.30000000000000004,
+    "validation_roc_auc": 0.9771227009322248,
+    "validation_pr_auc": 0.8442715882859299,
+    "best_validation_result": {
+        "threshold": 0.30000000000000004,
+        "accuracy": 0.9848024316109423,
+        "precision": 0.8461538461538461,
+        "recall": 0.7857142857142857,
+        "f1": 0.8148148148148148,
+        "confusion_matrix": [
+            [
+                939,
+                6
+            ],
+            [
+                9,
+                33
+            ]
+        ]
+    },
+    "top_10_thresholds": [
+        {
+            "threshold": 0.30000000000000004,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.31000000000000005,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.32000000000000006,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.33,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.34,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.35000000000000003,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.36000000000000004,
+            "accuracy": 0.9848024316109423,
+            "precision": 0.8461538461538461,
+            "recall": 0.7857142857142857,
+            "f1": 0.8148148148148148,
+            "confusion_matrix": [
+                [
+                    939,
+                    6
+                ],
+                [
+                    9,
+                    33
+                ]
+            ]
+        },
+        {
+            "threshold": 0.4600000000000001,
+            "accuracy": 0.9858156028368794,
+            "precision": 0.9375,
+            "recall": 0.7142857142857143,
+            "f1": 0.8108108108108109,
+            "confusion_matrix": [
+                [
+                    943,
+                    2
+                ],
+                [
+                    12,
+                    30
+                ]
+            ]
+        },
+        {
+            "threshold": 0.4700000000000001,
+            "accuracy": 0.9858156028368794,
+            "precision": 0.9375,
+            "recall": 0.7142857142857143,
+            "f1": 0.8108108108108109,
+            "confusion_matrix": [
+                [
+                    943,
+                    2
+                ],
+                [
+                    12,
+                    30
+                ]
+            ]
+        },
+        {
+            "threshold": 0.4800000000000001,
+            "accuracy": 0.9858156028368794,
+            "precision": 0.9375,
+            "recall": 0.7142857142857143,
+            "f1": 0.8108108108108109,
+            "confusion_matrix": [
+                [
+                    943,
+                    2
+                ],
+                [
+                    12,
+                    30
+                ]
+            ]
+        }
+    ]
+}

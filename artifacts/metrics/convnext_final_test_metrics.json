@@ -1,0 +1,34 @@
+{
+    "model": "ConvNeXt-Tiny",
+    "checkpoint": "models\\convnext_final_development_best.pth",
+    "checkpoint_epoch": 13,
+    "threshold_config": "artifacts\\metrics\\convnext_final_optimal_threshold.json",
+    "threshold": 0.30000000000000004,
+    "dataset": "data/final_splits",
+    "train_samples": 4629,
+    "validation_samples": 987,
+    "test_samples": 1000,
+    "test_used_for_model_selection": false,
+    "test_used_for_threshold_selection": false,
+    "accuracy": 0.98,
+    "precision": 0.8409090909090909,
+    "recall": 0.74,
+    "f1": 0.7872340425531915,
+    "roc_auc": 0.9637473684210526,
+    "pr_auc": 0.756715113487622,
+    "true_negatives": 943,
+    "false_positives": 7,
+    "false_negatives": 13,
+    "true_positives": 37,
+    "confusion_matrix": [
+        [
+            943,
+            7
+        ],
+        [
+            13,
+            37
+        ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n   Non-Fraud     0.9864    0.9926    0.9895       950\n       Fraud     0.8409    0.7400    0.7872        50\n\n    accuracy                         0.9800      1000\n   macro avg     0.9137    0.8663    0.8884      1000\nweighted avg     0.9791    0.9800    0.9794      1000\n"
+}

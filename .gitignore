@@ -1,0 +1,138 @@
+# ==============================
+# Python
+# ==============================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.streamlit/secrets.toml
+
+# ==============================
+# Dataset
+# ==============================
+data/raw/
+data/splits/
+data/splits_backup_before_leakage_fix/
+data/splits_leakage_safe/
+
+# Ignore generated/local image files
+*.jpg
+*.jpeg
+*.png
+
+# ==============================
+# Model checkpoints
+# ==============================
+models/*.pth
+
+# Keep ONLY final ConvNeXt model
+!models/convnext_final_development_best.pth
+
+# ==============================
+# Old model source files
+# ==============================
+src/models/resnet.py
+src/models/swin.py
+src/models/maxvit.py
+src/models/efficientnet.py
+src/models/dinov3.py
+
+# ==============================
+# Old training scripts
+# ==============================
+src/training/train_resnet50_final.py
+src/training/train_swin.py
+src/training/train_maxvit.py
+src/training/train_efficientnet.py
+src/training/train_dinov3.py
+src/training/train_convnext.py
+src/training/train_convnext_regularized.py
+
+# ==============================
+# Old evaluation scripts
+# ==============================
+src/evaluation/test_resnet50_final.py
+src/evaluation/test_swin.py
+src/evaluation/test_maxvit.py
+src/evaluation/test_efficientnet.py
+src/evaluation/test_efficientnet_tuned.py
+src/evaluation/test_dinov3.py
+src/evaluation/test_convnext.py
+src/evaluation/test_convnext_tuned.py
+
+# ==============================
+# Old threshold tuning scripts
+# ==============================
+src/evaluation/threshold_tuning_resnet50_final.py
+src/evaluation/threshold_tuning_efficientnet.py
+src/evaluation/threshold_tuning_convnext.py
+
+# ==============================
+# Generated artifacts
+# ==============================
+artifacts/gradcam/
+artifacts/leakage_visual_audit/
+artifacts/leakage_audit/
+artifacts/convnext_error_analysis/
+artifacts/plots/
+
+# ==============================
+# Other generated files
+# ==============================
+*.log
+*.tmps
+# ==============================
+# Entire local dataset
+# ==============================
+data/
+
+# Keep final split metadata only
+!data/final_splits/
+!data/final_splits/*.csv
+!data/final_splits/*.json
+
+# ==============================
+# Generated artifacts
+# ==============================
+artifacts/*
+
+# Keep final ConvNeXt metrics only
+!artifacts/metrics/
+!artifacts/metrics/convnext_final_development_metrics.json
+!artifacts/metrics/convnext_final_optimal_threshold.json
+!artifacts/metrics/convnext_final_test_metrics.json
+
+# ==============================
+# Model checkpoints
+# ==============================
+models/*.pth
+!models/convnext_final_development_best.pth
+
+# ==============================
+# Metrics
+# ==============================
+artifacts/metrics/*
+
+!artifacts/metrics/convnext_final_development_metrics.json
+!artifacts/metrics/convnext_final_optimal_threshold.json
+!artifacts/metrics/convnext_final_test_metrics.json
+
+# ==============================
+# Old model / experiment files
+# ==============================
+src/models/cnn.py
+src/models/resnet.py
+src/models/efficientnet.py
+
+src/training/train.py
+src/training/train_resnet.py
+
+src/evaluation/test_baseline.py
+src/evaluation/test_resnet.py
+src/evaluation/threshold_tuning.py

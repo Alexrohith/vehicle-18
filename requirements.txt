@@ -1,0 +1,35 @@
+# Deep Learning - CPU for Streamlit Cloud
+torch==2.11.0
+torchvision==0.26.0
+
+# Data Processing
+numpy
+pandas
+scikit-learn
+
+# Image Processing
+Pillow
+opencv-python-headless
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+PyYAML
+
+# Explainability
+grad-cam
+
+# Web Application
+streamlit
+
+# API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Testing
+pytest
+httpx
